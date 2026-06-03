@@ -1,16 +1,11 @@
+---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: my-backstage-app
   description: An example of a Backstage application.
   annotations:
-    # Kubernetes annotation - tells Backstage which resources belong to this component
-    backstage.io/kubernetes-label-selector: 'app=backstage-portal'
-    # Optional: specify namespace where resources are deployed
-    backstage.io/kubernetes-namespace: backstage
-    # Optional: GitHub integration (uncomment if you want to use it)
-    # github.com/project-slug: your-org/your-repo
-    # backstage.io/techdocs-ref: dir:.
+    backstage.io/kubernetes-label-selector: 'backstage.io/kubernetes-id=backstage-portal'
 spec:
   type: website
   owner: john@example.com
