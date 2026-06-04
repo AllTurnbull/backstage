@@ -1,0 +1,12 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: local-cluster
+  description: My Kubernetes Cluster
+  annotations:
+    backstage.io/kubernetes-cluster: local-cluster
+spec:
+  type: kubernetes-cluster
+  owner: user:default/allturnbull
+  system: kubernetes
