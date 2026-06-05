@@ -2,11 +2,13 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: my-backstage-app
-  description: An example of a Backstage application.
+  name: my-service
   annotations:
-    backstage.io/kubernetes-label-selector: 'backstage.io/kubernetes-id=backstage-portal'
+    # Single Argo CD application
+    argocd/app-name: my-service
+    # For multiple Argo CD instances, specify which one
+    # argocd/instance-name: primary
 spec:
-  type: website
-  owner: john@example.com
-  lifecycle: experimental
+  type: service
+  owner: team-a
+  lifecycle: production
