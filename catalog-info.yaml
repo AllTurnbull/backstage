@@ -10,5 +10,5 @@ metadata:
     # argocd/instance-name: primary
 spec:
   type: service
-  owner: team-a
+  owner: user:default/allturnbull
   lifecycle: production
