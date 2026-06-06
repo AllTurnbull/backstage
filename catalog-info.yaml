@@ -4,10 +4,7 @@ kind: Component
 metadata:
   name: my-service
   annotations:
-    # Single Argo CD application
     argocd/app-name: postgres
-    # For multiple Argo CD instances, specify which one
-    # argocd/instance-name: primary
 spec:
   type: service
   owner: user:default/allturnbull
